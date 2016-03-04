@@ -102,6 +102,9 @@ group :development do
   gem 'quiet_assets'
 
   gem 'i18n-tasks', '~> 0.9.1' if RUBY_VERSION >= '2.1'
+
+  gem 'capistrano', '~> 3.4.0'
+  gem 'capistrano-rails', '~> 1.1.3'
 end
 
 group :test do
