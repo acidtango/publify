@@ -115,6 +115,16 @@ ActiveRecord::Schema.define(version: 20160110094906) do
     t.text   "modules"
   end
 
+  create_table "profiles_rights", id: false, force: :cascade do |t|
+    t.integer "profile_id"
+    t.integer "right_id"
+  end
+
+  create_table "redirections", force: :cascade do |t|
+    t.integer "content_id"
+    t.integer "redirect_id"
+  end
+
   create_table "redirects", force: :cascade do |t|
     t.string   "from_path"
     t.string   "to_path"
